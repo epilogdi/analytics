@@ -11,6 +11,7 @@ $dataset = $_GET["dataset"]
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"/></script>
   <script src="https://analytics.epilog-di.com/js/estructura.js"></script>
   <script src="https://analytics.epilog-di.com/js/general.js"></script>
+  <script src="https://analytics.epilog-di.com/js/formulario.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/turf.js"></script>
   <script src="js/mapas.js"></script>
@@ -19,7 +20,7 @@ $dataset = $_GET["dataset"]
   </head>
 <body>
   <?php include "includes/modalEstado.php"?>
-  <?php //include "includes/modalEcommerce.php"?>
+  <?php include "includes/modalEcommerce2.php"?>
   <?php include "includes/modalTiendas.php"?>
   <?php include "includes/modalPunto.php"?>
   <div id="tooltipEstado" class="tooltip"></div>
@@ -40,16 +41,9 @@ $dataset = $_GET["dataset"]
   <div id="formulario" class="collapse">
     <?php include "includes/formularioVertical.php"?>
   </div>
-   <div id="botones" class="container">
+  <div id="botones" class="container">
     <?php include "includes/botones.php"?>
   </div>
-
-
-
-
-
-
-
   <script>
     var canales = [
       {prefijo:"Distribuidor", icono: "fa-warehouse", path:"M-293,389c-3.3,0-6,2.7-6,6c0,2.7,3.7,7.6,5.3,9.6c0.4,0.5,1.1,0.5,1.5,0c1.6-2,5.3-6.9,5.3-9.6	C-287,391.7-289.7,389-293,389z M-290.1,398.1c0,0.2-0.2,0.4-0.4,0.4h-5.1c-0.2,0-0.4-0.2-0.4-0.4v-0.8h5.8V398.1z M-290.1,396.7	h-5.8v-1h5.8V396.7z M-290.1,395.3h-5.8v-1.2h5.8V395.3z M-288.5,398.4h-0.7c-0.2,0-0.4-0.2-0.4-0.4v-4c0-0.3-0.2-0.5-0.5-0.5h-5.8	c-0.3,0-0.5,0.2-0.5,0.5v4c0,0.2-0.2,0.4-0.4,0.4h-0.7c-0.2,0-0.4-0.2-0.4-0.4v-4.8c0-0.4,0.2-0.8,0.6-0.9l4.1-1.6	c0.1,0,0.2,0,0.4,0l4.1,1.6c0.4,0.1,0.6,0.5,0.6,0.9v4.8C-288.2,398.3-288.3,398.4-288.5,398.4z"},
@@ -416,7 +410,7 @@ $dataset = $_GET["dataset"]
     var colores=['#ea4f50', '#ef7543', '#f29531', '#f3b306', '#bfb905', '#83bc07', '#1abc0b'] //Semaforo
     $(document).ready(function(){   
 
-
+populateCategories()
 
       $('body').keyup(function(e){
         if(e.keyCode == 32){

@@ -1,3 +1,22 @@
+function filterForm(esto){
+  var interno = $(esto).html()      
+  $(esto).html(`<i class="fas fa-spinner fa-lg fa-spin"></i>`)
+  setTimeout(function() {
+    generateChart()
+
+    $(esto).html(interno)
+  }, 1500,this);
+}
+
+function changeAnalytic(esto){
+  var valores = ["puntos", "nivelServicio", "ticketPromedio"];
+  if(valores.includes(esto.value)){
+    $(".soloSKU").hide()
+  }else{
+    $(".soloSKU").show()
+  }
+}
+
 function populateCategories(){
   var categories="<option value='TODAS' selected>Todas</option>";
   $.each( estructuraJerarquica.filter(x => x.dataset == dataset), function( key, value ) {       

@@ -12,10 +12,10 @@
         <div class="container">
           <ul class="nav nav-tabs">
             <li class="nav-item">
-              <button class="nav-link active" data-toggle="tab" data-target="#catx1">Comparativos Históricos</button>
+              <button class="nav-link active" data-toggle="tab" data-target="#catx1">Históricos</button>
             </li>
             <li class="nav-item">
-              <button class="nav-link" data-toggle="tab" data-target="#catx2">Comparativos Acumulados (Bar Chart)</button>
+              <button class="nav-link" data-toggle="tab" data-target="#catx2">Acumulados (Bar Chart)</button>
             </li>
             <!--<li class="nav-item hide">
               <button class="nav-link" data-toggle="tab" data-target="#catx3">Bubble</button>
@@ -30,7 +30,7 @@
               <button class="nav-link" data-toggle="tab" data-target="#catx6">Line</button>
             </li>-->
             <li class="nav-item">
-              <button class="nav-link" data-toggle="tab" data-target="#catx7">Comparativos Acumulados (Pie Chart)</button>
+              <button class="nav-link" data-toggle="tab" data-target="#catx7">Acumulados (Pie Chart)</button>
             </li>
             <!--<li class="nav-item hide">
               <button class="nav-link" data-toggle="tab" data-target="#catx8">3d Scater</button>
